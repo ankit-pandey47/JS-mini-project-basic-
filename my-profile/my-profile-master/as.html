@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="as.css"> -->
+    <!-- Latest compiled and minified CSS -->
+
+    <title>Ankit Pandey</title>
+  <style>
+    body, h1, h2, p, ul, li {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #303030; /* Dark background color */
+    color: #fff;
+    
+}
+
+.nav-links {
+    /* padding-bottom: 10px; */
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #303030;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #454545; /* Highlight color on hover */
+}
+
+/* Intro Section Styles */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.profile {
+    position: relative;
+}
+.myname{
+    font-size: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.profile:hover .profile-image {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile:hover .image-overlay {
+    opacity: 1;
+}
+
+.intro-box {
+    margin-top: 20px;
+    /* text-align: center; */
+}
+.workexp{
+    font-size: 25px;
+     padding: 15px; 
+      margin-left: 150px;
+       margin-top: 5px;
+}
+.intern{
+    font-size: px;
+    margin-left: 350px; 
+    margin-bottom: 20px;
+}
+.btn{
+    height: 28px;
+    width: 100px;
+    background-color: #0066cc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 255, 0.726);
+
+}
+.work-experience-section {
+    /* text-align: ; Center-align the content */
+}
+.education{
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.clgpic{
+    margin-top: 13px;
+    height: 30px;
+    width: 30px;
+}
+
+/* Contact Information Section Styles */
+.contact-section {
+    background-color: #e0e0e0; /* Light background color */
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+
+}
+
+.contact-info a {
+    color: #0066cc; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #004080; /* Highlight color on hover */
+}
+
+/* Work Experience Section Styles */
+.work-experience-section {
+    /* Add your styles for work experience section */
+}
+
+/* Footer Section Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    color: #fff;
+}
+hr{
+    margin-left: 300px;
+}
+
+@media (max-width: 768px) {
+  .intern{
+     margin-left: 80px;
+
+  }
+  .intro-section{
+      float: left; 
+  }
+  hr{
+    margin-left: 0px;
+  }
+  .intro{
+    text-align: center;
+  }
+  .workexp{
+    margin-left: 70px;
+    position: relative;
+    top: 10px;
+  }
+  .myname{
+    text-align:center
+  }
+  .nav-links li{
+    position: relative;
+    left: 25px;
+    word-wrap: normal;
+    right: 1px;
+   
+    
+    
+  }
+
+}
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://avatars.githubusercontent.com/u/143313086?v=4" style="height: 40px; width: 40px;
+            border-radius: 50%;">
+        </div>
+        <ul class="nav-links">
+            <li class="home"><a href="">Home</a></li>
+            <li><a href="https://www.instagram.com/ankit_parashar07/?next=%2F" target="_blank">Contact</a></li>
+            <!-- <li><a href="#home">Home</a></li> -->
+
+            
+        </ul>
+    </nav>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/143313086?v=4" alt="Profile Image" class="profile-image">
+            <div class="image-overlay"></div>
+        </div>
+        <h2 class="myname">Ankit Pandey</h2>
+
+        <div class="intro-box">
+            <p style="margin-top: 40px; font-size: 15px; font-family: 'Times New Roman', Times, serif;"class="intro">Hi, my name is Ankit and I am an engineering student. I wanted to take a moment to introduce myself and share my interests with you. I am passionate about exploring different fields of engineering and constantly expanding my knowledge in order to contribute to innovative solutions. Whether it's designing new technologies or solving complex problems, I enjoy the challenge that engineering brings. I am excited to connect with like-minded individuals who share my passion and learn from their experiences. Thank you for taking the time to get to know me a little better.</p>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="work-experience-section">
+        <!-- Add your work experience details here -->
+        <h1 class="workexp">Work Experience</h1><hr><br>
+        
+        <div class="intern">
+        <h1 style="font-size: 25px;">Intern :</h1>
+        <img src="https://media.licdn.com/dms/image/D4D0BAQFTpfRDuChAOQ/company-logo_200_200/0/1680453080726?e=2147483647&v=beta&t=vaGLjlUuvaXmURB3za9CcF_4UlrSsUrcxOnw5CiNF4U" class="clgpic">
+        <a href="https://prodigyinfotech.dev/" style="text-decoration: none; font-size: 23px;" target="_blank">Prodigy Infotech</a><br>
+        <h1>Software Development
+        </h1>
+        <h1>PIT/SEP23/3534
+        </h1>
+        <h1>Aug 2023 - Sep 2023 (2 months)
+        </h1>
+        <h1>Completed my 1 month internship at Prodigy Infotech as a software developer</h1>
+        <button type="btn" class="btn">
+
+            <a href="software_Prodigy.pdf"  target="_blank" style="font-size: 16px; color: white; text-decoration: none;">Certificate</a>
+        </button>
+    </div>
+    <br><br>
+    <hr >
+
+
+  <!-- second intern -->
+    <div class="intern">
+        <img src="https://health.spoken-tutorial.org/files/Media/Content/Event/1/ST-logo%20(1).png" class="clgpic" style="height:27px ; width: 40px; margin-left: -40px; position: relative; top: 7px;">
+        <a href="https://spoken-tutorial.org/#" style="text-decoration: none; font-size: 20px;" target="_blank" >SPOKEN TUTORIAL (IIT BOMBAY)</a><br>
+        <h1>C Programming Language
+        </h1>
+        <h1>Certificate code - 3453269SN3</h1>
+        <h1>July 3rd 2023</h1>
+        
+        <button type="btn" class="btn">
+
+            <a href="C Training Spoken Tutorial.pdf" target="_blank" style="font-size: 16px; color: white; text-decoration: none;">Certificate</a>
+        </button>
+    </div>
+
+
+    <!-- third intern -->
+    <br><br>
+    <hr >
+    <div class="intern">
+        <img src="https://health.spoken-tutorial.org/files/Media/Content/Event/1/ST-logo%20(1).png" class="clgpic" style="height:27px ; width: 40px; margin-left: -40px; position: relative; top: 12px;">
+        <a href="https://spoken-tutorial.org/#" style="text-decoration: none; font-size: 20px;" target="_blank">SPOKEN TUTORIAL (IIT BOMBAY)</a><br>
+        <h1>Advanced Cpp  Programming Language
+        </h1>
+        <h1>Certificate code - 3453269D81</h1>
+        <h1>December 22nd 2023</h1>
+        
+        <button type="btn" class="btn">
+
+            <a href="Cpp Spoken Tutorial.pdf" target="_blank" style="font-size: 16px; color: white; text-decoration: none;">Certificate</a>
+        </button>
+    </div>
+   
+     <!-- forth intern -->
+
+    <br><br>
+    <hr>
+    <div class="intern">
+        <img src="https://logos-world.net/wp-content/uploads/2021/11/Udemy-Emblem.png" class="clgpic" style="height:27px ; width: 43px; margin-left: -10px; position:relative; top: 10px;">
+        <a href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=Brand-Udemy_la.EN_cc.India_dev.&campaigntype=Search&portfolio=BrandDirect&language=EN&product=Course&test=&audience=Keyword&topic=&priority=&utm_content=deal4584&utm_term=_._ag_133043842301_._ad_595460368494_._kw_udemy_._de_c_._dm__._pl__._ti_kwd-296956216253_._li_9075256_._pd__._&matchtype=b&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7Nxrv7XUcHLB6QLz--XD508wXEJqhpcUEDi3FPvdTiNGSxgJvUAwBP2oaAilJEALw_wcB" style="text-decoration: none; font-size: 20px; " target="_blank">Udemy</a><br>
+        <h1>Project Development Using Java 
+        </h1>
+        <h1>Completed the course of length 45.5 hour</h1>
+        <h1>August 7th 2024</h1>
+        
+        <button type="btn" class="btn">
+
+            <a href="Project development using java Udemy.pdf" target="_blank" style="font-size: 16px; color: white; text-decoration: none;">Certificate</a>
+        </button>
+    </div>
+
+<!-- fifth intern -->
+
+    <br><br>
+    <hr>
+    <div class="intern">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP3kF92MxGI5bIirByGprNk7qtyty1kPVI0ozuMoOjWA&s" class="clgpic" style="height:27px ; width: 35px; margin-left: -10px; position:relative; top: 10px;">
+        <a href="https://www.openweaver.com/" style="text-decoration: none; font-size: 20px; " target="_blank">SCALER TOPICS</a><br>
+        <h1>CORE JAVA
+        </h1>
+        <h1>Certificate of Excellence</h1>
+        <h1>April 11th 2024</h1>
+        
+        <button type="btn" class="btn">
+
+            <a href="JAVA SCALER.png" target="_blank" style="font-size: 16px; color: white; text-decoration: none;">Certificate</a>
+        </button>
+    </div>
+
+    </section>
+
+    <!-- section for the education details -->
+    <section class="education">
+        <!-- <hr> -->
+        <h1 class="workexp">Education</h1><hr><br>
+
+        <div class="intern">
+            <img src="https://www.aryacollege.org/_next/image?url=https%3A%2F%2Faryacollegeassets.s3.ap-south-1.amazonaws.com%2Fwebsite%2FArya-logo_czu9gm.png&w=256&q=75" class="clgpic">
+            <span style="font-size: 22px;">Arya College of Engineering, Jaipur</span>
+            <br>
+
+
+            <h1>Bachelor of Technology - BTech, Computer Science
+            </h1>
+            <h1>Session - 2022 to 2026</h1>
+
+    </section>
+
+    <!-- skill of the person -->
+    <section class="skills">
+        <h1 style="font-size: 25px;  margin-left: 150px;">Skills</h1><br><hr>
+
+        <div class="intern">
+        <h1 style="padding: 15px;">•  Object-Oriented Programming (OOP)  <br> •   JAVA  <br> •  JDBC  <br> •   Java Servlet <br>  •   Spring Boot <br>  •   JavaScript <br>  •   C++  <br> •   C (Programming Language) <br>   •   Bootstrap(Framework) <br>  •   Cascading Style Sheets (CSS) <br>  •   HTML  <br> •   Web Development</h1>
+
+    </div>
+    </section>
+
+
+    <!-- Contact Information Section --> 
+    <section class="contact-section">
+        <div class="contact-info">
+            <p>Email: ankitrajmth2004@gmail.com</p>
+            <p>Phone: +91 9142914648</p>
+            <p><a href="https://www.linkedin.com/in/ankit-raj-0337b4285" target="_blank">LinkedIn Profile</a></p>
+                    </div>
+    </section>
+
+    
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Ankit Pandey. All rights reserved.</p>
+        
+    </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
